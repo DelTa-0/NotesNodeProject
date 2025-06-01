@@ -1,0 +1,19 @@
+{
+  "name": "notesnodeproject",
+  "version": "1.0.0",
+  "description": "echo \"# KahaKhane\" >> README.md\r git init\r git add README.md\r git commit -m \"first commit\"\r git branch -M main\r git remote add origin https://github.com/DelTa-0/KahaKhane.git\r git push -u origin main",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DelTa-0/NotesNodeProject.git"
+  },
+  "author": "Madhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DelTa-0/NotesNodeProject/issues"
+  },
+  "homepage": "https://github.com/DelTa-0/NotesNodeProject#readme"
+}
