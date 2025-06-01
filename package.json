@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/DelTa-0/NotesNodeProject/issues"
   },
-  "homepage": "https://github.com/DelTa-0/NotesNodeProject#readme"
+  "homepage": "https://github.com/DelTa-0/NotesNodeProject#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
 }
