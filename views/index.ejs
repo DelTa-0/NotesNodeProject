@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>hello this is your page</h1>
+    
+    <div class="main w-full min-h-screen bg-zinc-900">
+        <div class="form p-10 text-white">
+            <h1 class="flex justify-center align-center text-4xl">Notes</h1>
+            <form action="/create" method="post">
+                <input class="block mt-2 px-5 py-2 bg-zinc-800 w-full rounded-md outline-none" type="text" placeholder="Title here" name="title">
+                <textarea class="block mt-2 px-5 py-2 bg-zinc-800 w-full resize-none rounded-md outline-none" placeholder="Write description" name="description"></textarea>
+                <input type="submit" value="Create Task" class="mt-2 bg-blue-600 px-5 py-2 rounded-md hover:bg-blue-800">
+            </form>
+        </div>
+        <div class="tasks p-10 flex gap-3 flex-wrap">
+            <% if(files.length>0 ){%>
+            <% files.forEach(function(val){ %>
+                <div class="task min-w-72 px-3 py-4 bg-zinc-800 rounded-md">
+                <h1 class="text-white text-2xl tracking-tighter"><%= val %></h1>
+                <a href="" class="text-blue-500 inline-block mt-3">Read more</a>
+            </div>
+           <% })%>
+            <% }else { %>
+                <h3 class="text-blue-500">No task for now</h3>
+           <% }%>
+           
+            
+        </div>
+    </div>
 </body>
 </html>
